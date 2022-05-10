@@ -2,14 +2,14 @@ import { Component } from "react";
 import FormControl from "../../Utils/FormControl/FormControl";
 import FormInput from "../../Utils/FormInput/FormInput";
 import FormLabel from "../../Utils/FormLabel/FormLabel";
-import FormTitle from "../../Utils/FormTitle/FormTitle";
+import CVSectionTitle from "../../Utils/CVSectionTitle/CVSectionTitle";
 import FormWrapper from "../../Utils/FormWrapper/FormWrapper";
 
 class Personal extends Component {
   render() {
     return (
       <FormWrapper>
-        <FormTitle title="Personal Information" />
+        <CVSectionTitle title="Personal Information" />
 
         <FormControl>
           <FormLabel htmlFor="name" labelName="Name" />

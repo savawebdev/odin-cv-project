@@ -1,0 +1,8 @@
+.personal-info {
+  color: var(--clr-silver);
+  margin-block: 10px;
+}
+
+.personal-info > span {
+  font-weight: bold;
+}

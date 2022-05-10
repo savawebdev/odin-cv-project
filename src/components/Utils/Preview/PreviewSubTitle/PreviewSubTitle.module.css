@@ -1,0 +1,5 @@
+.preview-subtitle > span {
+  color: var(--clr-black);
+  font-size: 1.1rem;
+  font-weight: bold;
+}

@@ -3,14 +3,14 @@ import FormButton from "../../Utils/FormButton/FormButton";
 import FormControl from "../../Utils/FormControl/FormControl";
 import FormInput from "../../Utils/FormInput/FormInput";
 import FormLabel from "../../Utils/FormLabel/FormLabel";
-import FormTitle from "../../Utils/FormTitle/FormTitle";
+import CVSectionTitle from "../../Utils/CVSectionTitle/CVSectionTitle";
 import FormWrapper from "../../Utils/FormWrapper/FormWrapper";
 
 class Experience extends Component {
   render() {
     return (
       <FormWrapper>
-        <FormTitle title="Work Experience" />
+        <CVSectionTitle title="Work Experience" />
 
         <FormControl>
           <FormLabel htmlFor="workPosition" labelName="Position" />
@@ -20,6 +20,11 @@ class Experience extends Component {
         <FormControl>
           <FormLabel htmlFor="workCompany" labelName="Company" />
           <FormInput args={{ type: "text" }} name="workCompany" />
+        </FormControl>
+
+        <FormControl>
+          <FormLabel htmlFor="workCity" labelName="City" />
+          <FormInput args={{ type: "text", name: "workCity" }} />
         </FormControl>
 
         <FormControl>

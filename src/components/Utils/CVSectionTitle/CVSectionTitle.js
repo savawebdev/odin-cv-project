@@ -1,5 +1,5 @@
 import { Component } from "react";
-import styles from "./FormTitle.module.css";
+import styles from "./CVSectionTitle.module.css";
 
 class FormTitle extends Component {
   render() {
