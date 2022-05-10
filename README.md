@@ -24,8 +24,8 @@
 
 ## Technologies Used
 
-- React 18.1.0
-- Bootstrap
+- React 18.1.0 for building the app
+- Bootstrap for quick styling, linked directly inside `index.html`
 
 ## Features
 
