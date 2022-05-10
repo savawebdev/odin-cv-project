@@ -1,4 +1,4 @@
-import { Component, Fragment } from "react";
+import { Component } from "react";
 import Education from "./Education";
 import Experience from "./Experience";
 import Personal from "./Personal";
@@ -8,14 +8,12 @@ import SectionTitle from "../../Utils/SectionTitle/SectionTitle";
 class Form extends Component {
   render() {
     return (
-      <Fragment>
-        <Section>
-          <SectionTitle title="Enter Your Information" />
-          <Personal />
-          <Education />
-          <Experience />
-        </Section>
-      </Fragment>
+      <Section>
+        <SectionTitle title="Enter Your Information" />
+        <Personal />
+        <Education />
+        <Experience />
+      </Section>
     );
   }
 }

@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Header from "./components/Header/Header";
 import Form from "./components/CV/Form/Form";
-import Section from "./components/Utils/Section/Section";
+import Preview from "./components/CV/Preview/Preview";
 import "./App.module.css";
 
 class App extends Component {
@@ -12,6 +12,7 @@ class App extends Component {
 
         <main>
           <Form />
+          <Preview />
         </main>
       </div>
     );
