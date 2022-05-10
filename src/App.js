@@ -15,44 +15,8 @@ class App extends Component {
         email: "",
         phoneNumber: "",
       },
-      education: [
-        {
-          id: 1,
-          schoolName: "Emil Botta",
-          degree: "High School",
-          schoolCity: "Adjud, Romania",
-          subject: "Mathematics&Informatics",
-          schoolStart: "September 2003",
-          schoolEnd: "June 2007",
-        },
-        {
-          id: 1,
-          schoolName: "Emil Botta",
-          degree: "High School",
-          schoolCity: "Adjud, Romania",
-          subject: "Mathematics&Informatics",
-          schoolStart: "September 2003",
-          schoolEnd: "June 2007",
-        },
-      ],
-      experience: [
-        {
-          id: 2,
-          position: "Customer Agent",
-          company: "Orange Romania",
-          workCity: "Bacau, Romania",
-          workStart: "March 2020",
-          workEnd: "June 2021",
-        },
-        {
-          id: 2,
-          position: "Customer Agent",
-          company: "Orange Romania",
-          workCity: "Bacau, Romania",
-          workStart: "March 2020",
-          workEnd: "June 2021",
-        },
-      ],
+      education: [],
+      experience: [],
     };
 
     this.onPersonalChange = this.onPersonalChange.bind(this);
