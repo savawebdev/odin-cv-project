@@ -5,9 +5,12 @@ class FormInput extends Component {
   render() {
     return (
       <input
-        type={this.props.type}
-        name={this.props.name}
-        class={styles.input}
+        {...this.props.args}
+        class={
+          this.props.args.type === "month"
+            ? styles["month-input"]
+            : styles.input
+        }
       />
     );
   }

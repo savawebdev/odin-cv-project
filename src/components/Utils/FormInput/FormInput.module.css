@@ -11,3 +11,8 @@
 .input:focus {
   outline: none;
 }
+
+.month-input {
+  font-family: inherit;
+  height: 30px;
+}

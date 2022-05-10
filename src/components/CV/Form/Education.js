@@ -14,17 +14,27 @@ class Education extends Component {
 
         <FormControl>
           <FormLabel htmlFor="schoolName" labelName="School Name" />
-          <FormInput type="text" name="schoolName" />
+          <FormInput args={{ type: "text", name: "schoolName" }} />
         </FormControl>
 
         <FormControl>
           <FormLabel htmlFor="schoolCity" labelName="City" />
-          <FormInput type="text" name="schoolCity" />
+          <FormInput args={{ type: "text", name: "schoolCity" }} />
         </FormControl>
 
         <FormControl>
           <FormLabel htmlFor="schoolSubject" labelName="Subject" />
-          <FormInput type="text" name="schoolSubject" />
+          <FormInput args={{ type: "text", name: "schoolSubject" }} />
+        </FormControl>
+
+        <FormControl>
+          <FormLabel htmlFor="schoolStart" labelName="Start Date" />
+          <FormInput args={{ type: "month", name: "schoolStart" }} />
+        </FormControl>
+
+        <FormControl>
+          <FormLabel htmlFor="schoolEnd" labelName="End Date" />
+          <FormInput args={{ type: "month", name: "schoolEnd" }} />
         </FormControl>
 
         <FormControl>

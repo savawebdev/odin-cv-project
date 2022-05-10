@@ -13,22 +13,22 @@ class Personal extends Component {
 
         <FormControl>
           <FormLabel htmlFor="name" labelName="Name" />
-          <FormInput type="text" name="name" />
+          <FormInput args={{ type: "text", name: "name" }} />
         </FormControl>
 
         <FormControl>
           <FormLabel htmlFor="address" labelName="Address" />
-          <FormInput type="text" name="address" />
+          <FormInput args={{ type: "text", name: "address" }} />
         </FormControl>
 
         <FormControl>
           <FormLabel htmlFor="email" labelName="Email" />
-          <FormInput type="email" name="email" />
+          <FormInput args={{ type: "email", name: "email" }} />
         </FormControl>
 
         <FormControl>
           <FormLabel htmlFor="phoneNumber" labelName="Phone Number" />
-          <FormInput type="number" name="phoneNumber" />
+          <FormInput args={{ type: "number", name: "phoneNumber" }} />
         </FormControl>
       </FormWrapper>
     );
