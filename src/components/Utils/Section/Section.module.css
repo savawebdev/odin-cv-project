@@ -1,0 +1,6 @@
+.section {
+  border-radius: 10px;
+  background-color: var(--clr-darkgray);
+  padding: 20px;
+  width: 45%;
+}
