@@ -8,7 +8,6 @@
 - [General Info](#general-information)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
-- [Screenshots](#screenshots)
 - [Setup](#setup)
 - [Project Status](#project-status)
 - [Room for Improvement](#room-for-improvement)
@@ -30,13 +29,6 @@
 
 - returns a formatted CV from the user input data
 
-## Screenshots
-
-- Will provide screenshots once the project is done
-<!-- ![Example screenshot](./img/screenshot.png) -->
-
-<!-- If you have screenshots you'd like to share, include them here. -->
-
 ## Setup
 
 If you want to run this project locally, fork this repository and clone it on your computer. After that run `npm install` locally inside the project folder, to install the dependacies, and `npm start`.
@@ -46,6 +38,12 @@ If you want to run this project locally, fork this repository and clone it on yo
 Project is: _in progress_
 
 ## Room for Improvement
+
+- Add option to delete education and work experience entry
+- Add option to edit education and work experience entry
+- Add support for profile image
+- Add option to export as PDF
+- Make the formatted CV fixed size with A4 format
 
 ## Acknowledgements
 
