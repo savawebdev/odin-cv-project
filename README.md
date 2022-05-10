@@ -39,6 +39,7 @@ Project is: _in progress_
 
 ## Room for Improvement
 
+- Add description textarea on the form, so the user can enter a short paragraph about themselves
 - Add option to delete education and work experience entry
 - Add option to edit education and work experience entry
 - Add support for profile image
