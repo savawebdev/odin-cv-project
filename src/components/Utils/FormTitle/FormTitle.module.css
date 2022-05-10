@@ -1,4 +1,9 @@
 .title {
+  border-bottom: 3px solid var(--clr-silver);
+  border-top: 3px solid var(--clr-silver);
+  color: var(--clr-blue);
   font-size: 1.3rem;
   font-weight: bold;
+  padding-block: 5px;
+  text-align: center;
 }
