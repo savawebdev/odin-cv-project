@@ -1,6 +1,7 @@
 .form {
   border-radius: 10px;
   background-color: var(--clr-darkgray);
+  box-shadow: 5px 10px 15px var(--clr-darkgray);
   padding: 20px;
   width: 800px;
 }
