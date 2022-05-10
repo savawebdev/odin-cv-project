@@ -1,6 +1,6 @@
 import { Component, Fragment } from "react";
 import Education from "./Education";
-import FormWrapper from "../../Utils/FormWrapper/FormWrapper";
+import Experience from "./Experience";
 import Personal from "./Personal";
 import Section from "../../Utils/Section/Section";
 import SectionTitle from "../../Utils/SectionTitle/SectionTitle";
@@ -13,6 +13,7 @@ class Form extends Component {
           <SectionTitle title="Enter Your Information" />
           <Personal />
           <Education />
+          <Experience />
         </Section>
       </Fragment>
     );

@@ -9,9 +9,33 @@ import FormWrapper from "../../Utils/FormWrapper/FormWrapper";
 class Experience extends Component {
   render() {
     return (
-      <FomWrapper>
+      <FormWrapper>
         <FormTitle title="Work Experience" />
-      </FomWrapper>
+
+        <FormControl>
+          <FormLabel htmlFor="workPosition" labelName="Position" />
+          <FormInput args={{ type: "text" }} name="workPosition" />
+        </FormControl>
+
+        <FormControl>
+          <FormLabel htmlFor="workCompany" labelName="Company" />
+          <FormInput args={{ type: "text" }} name="workCompany" />
+        </FormControl>
+
+        <FormControl>
+          <FormLabel htmlFor="workStart" labelName="Start Date" />
+          <FormInput args={{ type: "month" }} name="workStart" />
+        </FormControl>
+
+        <FormControl>
+          <FormLabel htmlFor="workEnd" labelName="End Date" />
+          <FormInput args={{ type: "month" }} name="workEnd" />
+        </FormControl>
+
+        <FormControl>
+          <FormButton args={{ type: "submit" }} label="Add" />
+        </FormControl>
+      </FormWrapper>
     );
   }
 }
