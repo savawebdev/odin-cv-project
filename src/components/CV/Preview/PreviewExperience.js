@@ -1,4 +1,5 @@
 import { Component } from "react";
+import InfoWrapper from "../../Utils/Preview/InfoWrapper/InfoWrapper";
 import PreviewDate from "../../Utils/Preview/PreviewDate/PreviewDate";
 import PreviewInfo from "../../Utils/Preview/PreviewInfo/PreviewInfo";
 import PreviewSection from "../../Utils/Preview/PreviewSection/PreviewSection";
@@ -14,11 +15,11 @@ class PreviewExperience extends Component {
         <CVSectionTitle title="Work Experience" />
 
         {data.map((work) => (
-          <div key={work.id}>
+          <InfoWrapper args={{ key: work.id }}>
             <PreviewSubTitle name={work.company} city={work.workCity} />
             <PreviewDate startDate={work.workStart} endDate={work.workEnd} />
             <PreviewInfo info={`Position: ${work.position}`} />
-          </div>
+          </InfoWrapper>
         ))}
       </PreviewSection>
     );
