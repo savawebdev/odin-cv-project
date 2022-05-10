@@ -10,10 +10,10 @@ class App extends Component {
 
     this.state = {
       personal: {
-        name: "Andrei Sava",
-        address: "Bacau, Romania",
-        email: "andreisava88@gmail.com",
-        phoneNumber: "0748976101",
+        name: "",
+        address: "",
+        email: "",
+        phoneNumber: "",
       },
       education: [
         {
@@ -35,6 +35,51 @@ class App extends Component {
         },
       ],
     };
+
+    this.onNameChange = this.onNameChange.bind(this);
+    this.onAddressChange = this.onAddressChange.bind(this);
+    this.onEmailChange = this.onEmailChange.bind(this);
+    this.onPhoneChange = this.onPhoneChange.bind(this);
+  }
+
+  onNameChange(e) {
+    this.setState((prev) => ({
+      ...prev,
+      personal: {
+        ...prev.personal,
+        name: e.target.value,
+      },
+    }));
+  }
+
+  onAddressChange(e) {
+    this.setState((prev) => ({
+      ...prev,
+      personal: {
+        ...prev.personal,
+        address: e.target.value,
+      },
+    }));
+  }
+
+  onEmailChange(e) {
+    this.setState((prev) => ({
+      ...prev,
+      personal: {
+        ...prev.personal,
+        email: e.target.value,
+      },
+    }));
+  }
+
+  onPhoneChange(e) {
+    this.setState((prev) => ({
+      ...prev,
+      personal: {
+        ...prev.personal,
+        phoneNumber: e.target.value,
+      },
+    }));
   }
 
   render() {
@@ -43,7 +88,15 @@ class App extends Component {
         <Header />
 
         <main>
-          <Form />
+          <Form
+            handlers={{
+              onNameChange: this.onNameChange,
+              onAddressChange: this.onAddressChange,
+              onEmailChange: this.onEmailChange,
+              onPhoneChange: this.onPhoneChange,
+            }}
+          />
+
           <Preview
             personal={this.state.personal}
             education={this.state.education}

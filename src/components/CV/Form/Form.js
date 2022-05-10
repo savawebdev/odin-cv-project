@@ -10,7 +10,7 @@ class Form extends Component {
     return (
       <Section className="form">
         <SectionTitle title="Enter Your Information" />
-        <Personal />
+        <Personal handlers={this.props.handlers} />
         <Education />
         <Experience />
       </Section>
