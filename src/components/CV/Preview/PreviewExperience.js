@@ -14,9 +14,9 @@ class PreviewExperience extends Component {
         <CVSectionTitle title="Work Experience" />
 
         {data.map((work) => (
-          <div>
-            <PreviewSubTitle name={work.company} city={work.city} />
-            <PreviewDate startDate={work.startDate} endDate={work.endDate} />
+          <div key={work.id}>
+            <PreviewSubTitle name={work.company} city={work.workCity} />
+            <PreviewDate startDate={work.workStart} endDate={work.workEnd} />
             <PreviewInfo info={`Position: ${work.position}`} />
           </div>
         ))}

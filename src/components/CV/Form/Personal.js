@@ -7,7 +7,6 @@ import FormWrapper from "../../Utils/FormWrapper/FormWrapper";
 
 class Personal extends Component {
   render() {
-    const { handlers } = this.props;
     return (
       <FormWrapper>
         <CVSectionTitle title="Personal Information" />
@@ -18,7 +17,7 @@ class Personal extends Component {
             args={{
               type: "text",
               name: "name",
-              onChange: handlers.onNameChange,
+              onChange: this.props.onChange,
             }}
           />
         </FormControl>
@@ -29,7 +28,7 @@ class Personal extends Component {
             args={{
               type: "text",
               name: "address",
-              onChange: handlers.onAddressChange,
+              onChange: this.props.onChange,
             }}
           />
         </FormControl>
@@ -40,7 +39,7 @@ class Personal extends Component {
             args={{
               type: "email",
               name: "email",
-              onChange: handlers.onEmailChange,
+              onChange: this.props.onChange,
             }}
           />
         </FormControl>
@@ -51,7 +50,7 @@ class Personal extends Component {
             args={{
               type: "number",
               name: "phoneNumber",
-              onChange: handlers.onPhoneChange,
+              onChange: this.props.onChange,
             }}
           />
         </FormControl>

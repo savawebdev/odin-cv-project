@@ -3,7 +3,11 @@ import styles from "./FormWrapper.module.css";
 
 class FormWrapper extends Component {
   render() {
-    return <form className={styles.form}>{this.props.children}</form>;
+    return (
+      <form {...this.props.args} className={styles.form}>
+        {this.props.children}
+      </form>
+    );
   }
 }
 

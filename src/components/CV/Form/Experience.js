@@ -13,13 +13,13 @@ class Experience extends Component {
         <CVSectionTitle title="Work Experience" />
 
         <FormControl>
-          <FormLabel htmlFor="workPosition" labelName="Position" />
-          <FormInput args={{ type: "text" }} name="workPosition" />
+          <FormLabel htmlFor="position" labelName="Position" />
+          <FormInput args={{ type: "text" }} name="position" />
         </FormControl>
 
         <FormControl>
-          <FormLabel htmlFor="workCompany" labelName="Company" />
-          <FormInput args={{ type: "text" }} name="workCompany" />
+          <FormLabel htmlFor="company" labelName="Company" />
+          <FormInput args={{ type: "text" }} name="company" />
         </FormControl>
 
         <FormControl>

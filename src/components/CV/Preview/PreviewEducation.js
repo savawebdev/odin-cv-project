@@ -14,11 +14,14 @@ class PreviewEducation extends Component {
         <CVSectionTitle title="Education" />
 
         {data.map((school) => (
-          <div>
-            <PreviewSubTitle name={school.schoolName} city={school.city} />
+          <div key={school.id}>
+            <PreviewSubTitle
+              name={school.schoolName}
+              city={school.schoolCity}
+            />
             <PreviewDate
-              startDate={school.startDate}
-              endDate={school.endDate}
+              startDate={school.schoolStart}
+              endDate={school.schoolEnd}
             />
             <PreviewInfo info={`Degree: ${school.degree}`} />
             <PreviewInfo info={`Subject: ${school.subject}`} />

@@ -10,8 +10,8 @@ class Form extends Component {
     return (
       <Section className="form">
         <SectionTitle title="Enter Your Information" />
-        <Personal handlers={this.props.handlers} />
-        <Education />
+        <Personal onChange={this.props.onPersonalChange} />
+        <Education addSchool={this.props.addSchool} />
         <Experience />
       </Section>
     );

@@ -17,69 +17,51 @@ class App extends Component {
       },
       education: [
         {
+          id: 1,
           schoolName: "Emil Botta",
           degree: "High School",
-          city: "Adjud, Romania",
+          schoolCity: "Adjud, Romania",
           subject: "Mathematics&Informatics",
-          startDate: "September 2003",
-          endDate: "June 2007",
+          schoolStart: "September 2003",
+          schoolEnd: "June 2007",
         },
       ],
       experience: [
         {
+          id: 2,
           position: "Customer Agent",
           company: "Orange Romania",
-          city: "Bacau, Romania",
-          startDate: "March 2020",
-          endDate: "June 2021",
+          workCity: "Bacau, Romania",
+          workStart: "March 2020",
+          workEnd: "June 2021",
         },
       ],
     };
 
-    this.onNameChange = this.onNameChange.bind(this);
-    this.onAddressChange = this.onAddressChange.bind(this);
-    this.onEmailChange = this.onEmailChange.bind(this);
-    this.onPhoneChange = this.onPhoneChange.bind(this);
+    this.onPersonalChange = this.onPersonalChange.bind(this);
+    this.addSchool = this.addSchool.bind(this);
   }
 
-  onNameChange(e) {
+  onPersonalChange(e) {
+    e.preventDefault();
+    const name = e.target.name;
+
     this.setState((prev) => ({
       ...prev,
       personal: {
         ...prev.personal,
-        name: e.target.value,
+        [name]: e.target.value,
       },
     }));
   }
 
-  onAddressChange(e) {
+  addSchool(newSchool) {
     this.setState((prev) => ({
       ...prev,
-      personal: {
-        ...prev.personal,
-        address: e.target.value,
-      },
+      education: [...prev.education, newSchool],
     }));
-  }
 
-  onEmailChange(e) {
-    this.setState((prev) => ({
-      ...prev,
-      personal: {
-        ...prev.personal,
-        email: e.target.value,
-      },
-    }));
-  }
-
-  onPhoneChange(e) {
-    this.setState((prev) => ({
-      ...prev,
-      personal: {
-        ...prev.personal,
-        phoneNumber: e.target.value,
-      },
-    }));
+    console.log(this.state);
   }
 
   render() {
@@ -89,12 +71,8 @@ class App extends Component {
 
         <main>
           <Form
-            handlers={{
-              onNameChange: this.onNameChange,
-              onAddressChange: this.onAddressChange,
-              onEmailChange: this.onEmailChange,
-              onPhoneChange: this.onPhoneChange,
-            }}
+            onPersonalChange={this.onPersonalChange}
+            addSchool={this.addSchool}
           />
 
           <Preview

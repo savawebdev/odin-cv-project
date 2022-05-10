@@ -6,7 +6,7 @@ class FormInput extends Component {
     return (
       <input
         {...this.props.args}
-        class={
+        className={
           this.props.args.type === "month"
             ? styles["month-input"]
             : styles.input
