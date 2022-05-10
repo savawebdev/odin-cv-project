@@ -8,7 +8,7 @@ import SectionTitle from "../../Utils/SectionTitle/SectionTitle";
 class Form extends Component {
   render() {
     return (
-      <Section>
+      <Section className="form">
         <SectionTitle title="Enter Your Information" />
         <Personal />
         <Education />

@@ -5,6 +5,19 @@ import Preview from "./components/CV/Preview/Preview";
 import "./App.module.css";
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      personal: {
+        name: "Andrei Sava",
+        address: "Bacau, Romania",
+        email: "andreisava88@gmail.com",
+        phoneNumber: "0748976101",
+      },
+    };
+  }
+
   render() {
     return (
       <div>
@@ -12,7 +25,7 @@ class App extends Component {
 
         <main>
           <Form />
-          <Preview />
+          <Preview personal={this.state.personal} />
         </main>
       </div>
     );
