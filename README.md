@@ -1,7 +1,7 @@
 # Project Name
 
 > CV Application which allows user input their info and returns a formatted CV.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+> Live demo [_here_](https://imaginative-valkyrie-ca15ed.netlify.app/). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
 
