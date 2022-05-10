@@ -25,6 +25,15 @@ class App extends Component {
           endDate: "June 2007",
         },
       ],
+      experience: [
+        {
+          position: "Customer Agent",
+          company: "Orange Romania",
+          city: "Bacau, Romania",
+          startDate: "March 2020",
+          endDate: "June 2021",
+        },
+      ],
     };
   }
 
@@ -38,6 +47,7 @@ class App extends Component {
           <Preview
             personal={this.state.personal}
             education={this.state.education}
+            experience={this.state.experience}
           />
         </main>
       </div>

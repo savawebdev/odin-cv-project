@@ -2,6 +2,7 @@ import { Component } from "react";
 import PreviewEducation from "./PreviewEducation";
 import PreviewPersonal from "./PreviewPersonal";
 import Section from "../../Utils/Section/Section";
+import PreviewExperience from "./PreviewExperience";
 
 class Preview extends Component {
   render() {
@@ -9,6 +10,7 @@ class Preview extends Component {
       <Section className="preview">
         <PreviewPersonal data={this.props.personal} />
         <PreviewEducation data={this.props.education} />
+        <PreviewExperience data={this.props.experience} />
       </Section>
     );
   }
