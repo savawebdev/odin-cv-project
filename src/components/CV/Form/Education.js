@@ -25,7 +25,7 @@ class Education extends Component {
     e.preventDefault();
 
     const newSchool = {
-      id: uniqid,
+      id: uniqid(),
       schoolName: this.schoolNameRef.current.value,
       schoolCity: this.schoolCityRef.current.value,
       degree: this.degreeRef.current.value,

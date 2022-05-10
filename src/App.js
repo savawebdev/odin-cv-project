@@ -40,6 +40,7 @@ class App extends Component {
 
     this.onPersonalChange = this.onPersonalChange.bind(this);
     this.addSchool = this.addSchool.bind(this);
+    this.addWorkExperience = this.addWorkExperience.bind(this);
   }
 
   onPersonalChange(e) {
@@ -60,8 +61,13 @@ class App extends Component {
       ...prev,
       education: [...prev.education, newSchool],
     }));
+  }
 
-    console.log(this.state);
+  addWorkExperience(newWorkExperience) {
+    this.setState((prev) => ({
+      ...prev,
+      experience: [...prev.experience, newWorkExperience],
+    }));
   }
 
   render() {
@@ -73,6 +79,7 @@ class App extends Component {
           <Form
             onPersonalChange={this.onPersonalChange}
             addSchool={this.addSchool}
+            addWorkExperience={this.addWorkExperience}
           />
 
           <Preview

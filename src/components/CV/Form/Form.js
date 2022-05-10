@@ -12,7 +12,7 @@ class Form extends Component {
         <SectionTitle title="Enter Your Information" />
         <Personal onChange={this.props.onPersonalChange} />
         <Education addSchool={this.props.addSchool} />
-        <Experience />
+        <Experience addWorkExperience={this.props.addWorkExperience} />
       </Section>
     );
   }
