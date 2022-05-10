@@ -8,7 +8,10 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Form />
+
+        <main>
+          <Form />
+        </main>
       </div>
     );
   }

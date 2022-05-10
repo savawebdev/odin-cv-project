@@ -137,3 +137,7 @@ table {
 body {
   font-family: "Poppins", sans-serif;
 }
+
+main {
+  padding: 50px;
+}
