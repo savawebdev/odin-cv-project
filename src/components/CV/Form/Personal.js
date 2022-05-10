@@ -1,5 +1,6 @@
 import { Component } from "react";
 import FormControl from "../../Utils/FormControl/FormControl";
+import FormInput from "../../Utils/FormInput/FormInput";
 import FormLabel from "../../Utils/FormLabel/FormLabel";
 import FormSectionTitle from "../../Utils/FormSectionTitle/FormSectionTitle";
 
@@ -11,8 +12,7 @@ class Personal extends Component {
 
         <FormControl>
           <FormLabel htmlFor="name" labelName="Name" />
-
-          <input type="text" name="name" />
+          <FormInput type="text" name="name" />
         </FormControl>
       </section>
     );
