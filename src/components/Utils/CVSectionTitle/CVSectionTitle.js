@@ -1,5 +1,7 @@
 import styles from "./CVSectionTitle.module.css";
 
-const FormTitle = (props) => <h3 className={styles.title}>{props.title}</h3>;
+const CVSectionTitle = (props) => (
+  <h3 className={styles.title}>{props.title}</h3>
+);
 
-export default FormTitle;
+export default CVSectionTitle;
