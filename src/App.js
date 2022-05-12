@@ -1,77 +1,53 @@
-import { Component } from "react";
+import { useState } from "react";
 import Header from "./components/Header/Header";
 import Form from "./components/CV/Form/Form";
 import Preview from "./components/CV/Preview/Preview";
 import "./App.module.css";
 
-class App extends Component {
-  constructor() {
-    super();
+const App = () => {
+  const [personal, setPersonal] = useState({
+    name: "",
+    address: "",
+    email: "",
+    phoneNumber: "",
+  });
+  const [education, setEducation] = useState([]);
+  const [experience, setExperience] = useState([]);
 
-    this.state = {
-      personal: {
-        name: "",
-        address: "",
-        email: "",
-        phoneNumber: "",
-      },
-      education: [],
-      experience: [],
-    };
-
-    this.onPersonalChange = this.onPersonalChange.bind(this);
-    this.addSchool = this.addSchool.bind(this);
-    this.addWorkExperience = this.addWorkExperience.bind(this);
-  }
-
-  onPersonalChange(e) {
+  const onPersonalChange = (e) => {
     e.preventDefault();
     const name = e.target.name;
 
-    this.setState((prev) => ({
-      ...prev,
-      personal: {
-        ...prev.personal,
-        [name]: e.target.value,
-      },
-    }));
-  }
+    setPersonal((prev) => ({ ...prev, [name]: e.target.value }));
+  };
 
-  addSchool(newSchool) {
-    this.setState((prev) => ({
-      ...prev,
-      education: [...prev.education, newSchool],
-    }));
-  }
+  const addSchool = (newSchool) => {
+    setEducation((prev) => [...prev, newSchool]);
+  };
 
-  addWorkExperience(newWorkExperience) {
-    this.setState((prev) => ({
-      ...prev,
-      experience: [...prev.experience, newWorkExperience],
-    }));
-  }
+  const addWorkExperience = (newWorkExperience) => {
+    setExperience((prev) => [...prev, newWorkExperience]);
+  };
 
-  render() {
-    return (
-      <div>
-        <Header />
+  return (
+    <div>
+      <Header />
 
-        <main>
-          <Form
-            onPersonalChange={this.onPersonalChange}
-            addSchool={this.addSchool}
-            addWorkExperience={this.addWorkExperience}
-          />
+      <main>
+        <Form
+          onPersonalChange={onPersonalChange}
+          addSchool={addSchool}
+          addWorkExperience={addWorkExperience}
+        />
 
-          <Preview
-            personal={this.state.personal}
-            education={this.state.education}
-            experience={this.state.experience}
-          />
-        </main>
-      </div>
-    );
-  }
-}
+        <Preview
+          personal={personal}
+          education={education}
+          experience={experience}
+        />
+      </main>
+    </div>
+  );
+};
 
 export default App;

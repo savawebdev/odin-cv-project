@@ -1,14 +1,11 @@
-import { Component } from "react";
 import styles from "./FormWrapper.module.css";
 
-class FormWrapper extends Component {
-  render() {
-    return (
-      <form {...this.props.args} className={styles.form}>
-        {this.props.children}
-      </form>
-    );
-  }
-}
+const FormWrapper = (props) => {
+  return (
+    <form {...props.args} className={styles.form}>
+      {props.children}
+    </form>
+  );
+};
 
 export default FormWrapper;
